@@ -1236,9 +1236,13 @@ input,textarea,select{
     .section.open{
         left: 270px;
     }
+    .about .about-content .personal-info .info-items p,
     .about .about-content .personal-info .info-item p span{
-        display: block;
-        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .about .about-content .personal-info .info-item p span{
+        margin-left: 30px;
     }
 }
 

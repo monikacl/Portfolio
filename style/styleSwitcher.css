@@ -83,6 +83,7 @@ body.dark .about .about-content .timeline,
 body.dark .aside{
     background-color: #222222;
 }
+body.dark .about .about-content .personal-info .info-items p,
 body.dark .contact .contact-info-item h4,
 body.dark .blog .blog-item-inner .blog-info .blog-title,
 body.dark .portfolio .portfolio-filter button,
@@ -98,6 +99,7 @@ body.dark .aside .logo a,
 body.dark .aside .nav li a{
     color: #ffffff;
 }
+body.dark .about .about-content .personal-info .info-items p span,
 body.dark .blog .blog-item-inner .blog-info .blog-description,
 body.dark .contact .contact-form .form-item .form-control,
 body.dark .contact .contact-info-item p,
