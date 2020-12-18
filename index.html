@@ -6,9 +6,31 @@
     <title>Monika CL</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="pink.css" type="text/css">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+
+    <!-- Style Switcher -->
+    <link rel="stylesheet" class="alternate-style" title="pink" href="pink.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="blue" href="blue.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="orange" href="orange.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="yellow" href="yellow.css" type="text/css"disabled >
+    <link rel="stylesheet" class="alternate-style" title="green" href="green.css" type="text/css" disabled>
+    <link rel="stylesheet" href="styleSwitcher.css" type="text/css">
+
 </head>
+
 <body>
+    <!-- Pre loader -->
+    <div class="preloader">
+        <div class="loader">
+
+        </div>
+    </div>
+
+    <!-- Pre loader End -->
+
+
+    <!--   Main Container   -->
     <div class="main-container">
         <div class="aside">
             <div class="logo">
@@ -18,12 +40,12 @@
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="#"><i class="fa fa-user"></i>About</a></li>
-                <li><a href="#"><i class="fa fa-list"></i>Services</a></li>
-                <li><a href="#"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-                <li><a href="#"><i class="fa fa-envelope"></i>Blog</a></li>
-                <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#blog"><i class="fa fa-envelope"></i>Blog</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
             </ul>
             <div class="copyright-text">
                 &copy; All rights are reserved
@@ -32,7 +54,7 @@
         <div class="main-content">
 
             <!-- Home section -->
-            <section class="home section hidden">
+            <section class="home section active" id="home">
                 <div class="container">
                     <div class="intro">
                         <img src="/home/yogesh/Downloads/my.jpeg" alt="ProfileImage" class="shadow-dark"> 
@@ -40,11 +62,11 @@
                         <p>Hello, welcome to My Profile.</p>
                         <p>Iam monika, currently persuing my B.E in computer science at AMC in Bengaluru</p>
                         <div class="social-links">
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                            <a href="#"><i class="fa fa-github"></i></a>
+                            <a href="https://twitter.com/home/MonikaCL1/" title="Twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/monika.lankappa.1/" title="Facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/cl_monika/" title="Instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/monika-cl-0a5a581b7/"title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/monikacl/" title="Github"><i class="fa fa-github"></i></a>
                         </div>
                     </div>
                 </div>
@@ -53,7 +75,7 @@
             <!-- End of Home section -->
 
             <!-- about section -->
-            <section class="about section hidden">
+            <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title">
@@ -100,7 +122,7 @@
                                     <div class="row">
                                         <div class="buttons padd-15">
                                             <a href="#" class="btn">Download CV</a>
-                                            <a href="#" class="btn">Hire me</a>
+                                            <a href="#contact" data-section-index="1" class="btn hire-me">Hire me</a>
                                         </div>
                                     </div>
                                 </div>
@@ -109,35 +131,35 @@
                                         <div class="skill-item padd-15">
                                             <h5>Javascript</h5>
                                             <div class="progress">
-                                                <div class="progress-in" style="width: 70"></div>
+                                                <div class="progress-in" style="width: 70%"></div>
                                                 <div class="skill-percent">70%</div>
                                             </div>
                                         </div>
                                         <div class="skill-item padd-15">
                                             <h5>Html</h5>
                                             <div class="progress">
-                                                <div class="progress-in" style="width: 60"></div>
+                                                <div class="progress-in" style="width: 60%"></div>
                                                 <div class="skill-percent">60%</div>
                                             </div>
                                         </div>
                                         <div class="skill-item padd-15">
                                             <h5>Css</h5>
                                             <div class="progress">
-                                                <div class="progress-in" style="width: 50"></div>
+                                                <div class="progress-in" style="width:50%"></div>
                                                 <div class="skill-percent">50%</div>
                                             </div>
                                         </div>
                                         <div class="skill-item padd-15">
                                             <h5>C++</h5>
                                             <div class="progress">
-                                                <div class="progress-in" style="width: 30"></div>
+                                                <div class="progress-in" style="width:30%"></div>
                                                 <div class="skill-percent">30%</div>
                                             </div>
                                         </div>
                                         <div class="skill-item padd-15">
                                             <h5>Python</h5>
                                             <div class="progress">
-                                                <div class="progress-in" style="width: 50"></div>
+                                                <div class="progress-in" style="width:50%"></div>
                                                 <div class="skill-percent">50%</div>
                                             </div>
                                         </div>
@@ -230,7 +252,7 @@
             <!-- End of about section -->
 
             <!-- Service section -->
-            <section class="service section hidden">
+            <section class="service section" id="services">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-150">
@@ -313,7 +335,7 @@
             <!-- End of sevices section -->
 
             <!-- Portfolio Section -->
-            <section class="portfolio section">
+            <section class="portfolio section" id="portfolio">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-150">
@@ -334,7 +356,7 @@
                         <div class="portfolio-item padd-15" data-category="web-design">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
-                                    <img src="/home/yogesh/Pictures/2.jpg" alt="Portfolio">
+                                    <img src="/home/yogesh/Desktop/Profile folder/1.jpg" alt="Portfolio">
                                 </div>
                                 <div class="portfolio-info">
                                     <h4>Web design</h4>
@@ -349,7 +371,7 @@
                         <div class="portfolio-item padd-15" data-category="video-editing">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
-                                    <img src="/home/yogesh/Pictures/2.jpg" alt="Portfolio">
+                                    <img src="/home/yogesh/Desktop/Profile folder/2.jpg" alt="Portfolio">
                                 </div>
                                 <div class="portfolio-info">
                                     <h4>Video Editing</h4>
@@ -364,7 +386,7 @@
                         <div class="portfolio-item padd-15" data-category="web-design">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
-                                    <img src="/home/yogesh/Pictures/2.jpg" alt="Portfolio">
+                                    <img src="/home/yogesh/Desktop/Profile folder/3.jpg" alt="Portfolio">
                                 </div>
                                 <div class="portfolio-info">
                                     <h4>Web design</h4>
@@ -379,7 +401,7 @@
                         <div class="portfolio-item padd-15" data-category="web-design">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
-                                    <img src="/home/yogesh/Pictures/2.jpg" alt="Portfolio">
+                                    <img src="/home/yogesh/Desktop/Profile folder/4.jpg" alt="Portfolio">
                                 </div>
                                 <div class="portfolio-info">
                                     <h4>Web design</h4>
@@ -394,7 +416,7 @@
                         <div class="portfolio-item padd-15" data-category="photography">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
-                                    <img src="/home/yogesh/Pictures/2.jpg" alt="Portfolio">
+                                    <img src="/home/yogesh/Desktop/Profile folder/5.jpg" alt="Portfolio">
                                 </div>
                                 <div class="portfolio-info">
                                     <h4>Photography</h4>
@@ -409,7 +431,7 @@
                         <div class="portfolio-item padd-15" data-category="wordpress">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
-                                    <img src="/home/yogesh/Pictures/2.jpg" alt="Portfolio">
+                                    <img src="/home/yogesh/Desktop/Profile folder/6.jpg" alt="Portfolio">
                                 </div>
                                 <div class="portfolio-info">
                                     <h4>Wordpress</h4>
@@ -423,6 +445,163 @@
                     </div>
                 </div>
             </section>
+
+            <!-- blog section start -->
+            <section class="blog section" id="blog">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Latest Blog</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Blog - Item  -->
+                        <div class="blog-item padd-15">
+                            <div class="blog-item-inner shadow-dark">
+                                <div class="blog-img">
+                                    <img src="/home/yogesh/Desktop/Profile folder/2.jpg" alt="blog">
+                                        <div class="blog-date">
+                                            4 jun 2020
+                                        </div>
+                                </div>
+                                <div class="blog-info">
+                                    <h4 class="blog-title">Responsive Web Design</h4>
+                                    <p class="blog-description">Msaien hsoen haooen weice aa aein lei, ehi fea ienfei vewh  woon be mowivb sef ve
+                                        efiefb  efewf ehgb  bwpigm socnd adin.</p>
+                                    <p class="blog-tags">Tags : <a href="#">Html</a> , <a href="">Css</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Blog - Item End  -->
+
+
+                        <!-- Blog - Item  -->
+
+                        <div class="blog-item padd-15">
+                            <div class="blog-item-inner shadow-dark">
+                                    <div class="blog-img">
+                                        <img src="/home/yogesh/Desktop/Profile folder/2.jpg" alt="blog">
+                                            <div class="blog-date">
+                                                4 jun 2020
+                                            </div>
+                                    </div>
+                                    <div class="blog-info">
+                                        <h4 class="blog-title">Responsive Web Design</h4>
+                                        <p class="blog-description">Msaien hsoen haooen weice aa aein lei, ehi fea ienfei vewh  woon be mowivb sef ve
+                                            efiefb  efewf ehgb  bwpigm socnd adin.</p>
+                                        <p class="blog-tags">Tags : <a href="#">Html</a> , <a href="">Css</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <!-- Blog - Item End  -->
+
+                        <!-- Blog - Item  -->
+
+                            <div class="blog-item padd-15">
+                                <div class="blog-item-inner shadow-dark">
+                                    <div class="blog-img">
+                                        <img src="/home/yogesh/Desktop/Profile folder/2.jpg" alt="blog">
+                                            <div class="blog-date">
+                                                4 jun 2020
+                                            </div>
+                                    </div>
+                                    <div class="blog-info">
+                                        <h4 class="blog-title">Responsive Web Design</h4>
+                                        <p class="blog-description">Msaien hsoen haooen weice aa aein lei, ehi fea ienfei vewh  woon be mowivb sef ve
+                                            efiefb  efewf ehgb  bwpigm socnd adin.</p>
+                                        <p class="blog-tags">Tags : <a href="#">Html,Css</a> , <a href="">Javascript</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <!-- Blog - Item End  -->
+
+                        
+
+                    </div>
+                </div>
+            </section>
+            <!-- blog section end -->
+
+            <!-- Contact Section -->
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-150">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <!-- contact-info-item -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-phone"></i></div>
+                            <h4>Call Us On</h4>
+                            <p>+91 9964471038</p>
+                        </div>
+                        <!-- contact-info-item End -->
+
+                        <!-- contact-info-item -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-map-marker"></i></div>
+                            <h4>Home</h4>
+                            <p>#81, Vinayaka Layout, Shantipura, Electronic City Phase-2, Anekal Taluk, Bengaluru-100</p>
+                        </div>
+                        <!-- contact-info-item End -->
+
+                        <!-- contact-info-item -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-envelope"></i></div>
+                            <h4>Email</h4>
+                            <p>clmonika5@gmail.com</p>
+                        </div>
+                        <!-- contact-info-item End -->
+
+                    </div>
+                    <!-- Contact Form -->
+                    <div class="row">
+                        <form class="contact-form padd-15" id="my-form" action="https://formspree.io/f/xeqprbvk"  method="POST">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" name="Name" class="form-control" required placeholder="Name*">
+                                    </div>
+                                </div>
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" name="Email" class="form-control" required placeholder="Email*">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" name="Subject" class="form-control" required placeholder="Subject*">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea name="Message" class="form-control" required placeholder="Your Message..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 padd-15">
+                                    <button type="submit" class="btn">Send Message</button>
+                                </div>
+                            </div>
+                            <!-- <div id="my-form-status"></div> -->
+                        </form>
+                    </div>
+                    <!-- Contact Form End -->
+                </div>
+            </section>
+            <!--    Contact Section End    -->
+
+        
         </div>  
     </div">
     <!-- End of main container  -->
@@ -432,21 +611,51 @@
         <div class="lightbox-content ">
             <div class="lightbox-close">&times;</div>
             <!-- <div class="lightbox-close"><i class="fa fa-close"></i></div> -->
-            <img src="/home/yogesh/Pictures/2.jpg" class="lightbox-img">
+            <img src="/home/yogesh/Desktop/Profile folder/1.jpg" class="lightbox-img" onclick="nextItem()">
             <div class="lightbox-caption">
-                <div class="caption-text">Web Design</div>
-                <div class="caption-counter">1 of 6</div>
+                <div class="caption-text"></div>
+                <div class="caption-counter"></div>
             </div>
         </div>
         <div class="lightbox-controls">
-            <div class="prev-item"><i class="fa fa-angle-left"></i></div>
-            <div class="next-item"><i class="fa fa-angle-right"></i></div> 
+            <div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
+            <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div> 
         </div>
     </div>
     <!-- light box end -->
 
+    <!-- Live style switcher -->
+    <div class="style-switcher">
+        <div class="toggle-style-switcher">
+            <i class="fa fa-cog fa-spin"></i>
+        </div>
+        <h5>Style Switcher</h5>
+        <ul>
+            <li><a href="javascript:void(0);" title="pink" style="background-color: #ec1839" onclick="setActiveStyle('pink')"></a></li>
+            <li><a href="javascript:void(0);" title="blue" style="background-color: #2196f3" onclick="setActiveStyle('blue')"></a></li>
+            <li><a href="javascript:void(0);" title="orange" style="background-color: #fa5b0f" onclick="setActiveStyle('orange')"></a></li>
+            <li><a href="javascript:void(0);" title="yellow" style="background-color: #ffb400" onclick="setActiveStyle('yellow')"></a></li>
+            <li><a href="javascript:void(0);" title="green" style="background-color: #72b626" onclick="setActiveStyle('green')"></a></li>
+        </ul>
+        <h5>Body Skin</h5>
+        <label>
+            <input type="radio" class="body-skin" name="body-style" value="light" checked="true">
+            Light
+        </label>
+        <label>
+            <input type="radio" class="body-skin" name="body-style" value="dark">
+            Dark
+        </label>
+    </div>
+    <!-- Live style switcher End -->
+
    <!-- Template js  -->
-   <script src="/home/yogesh/Desktop/Profile folder/js.js"></script>
+   <script src="js.js"></script>
+
+   <!-- Live style switcher -->
+   <script src="js1.js"></script>
+
+   
 
 </body>
 </html>
